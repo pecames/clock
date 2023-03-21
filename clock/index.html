@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="dayOrNight()">
+
+    <header class="header">
+        <h2>Clock</h2>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/pedro-campos-18a049256/">LinkedIn</a></li>
+            <li><a href="https://github.com/pecames">GitHub</a></li>
+            <li><a href="mailto:pmesquitacampos@hotmail.com">Contact Me</a></li>
+        </ul>
+    </header>
+    <main>
+        <div class="container-clock" onload="whatsOclock()">
+            <div class="clock centralize">
+                <span id="hours">00</span>
+                <span>:</span>
+                <span id="minutes">00</span>
+                <span>:</span>
+                <span id="seconds">00</span>
+                <span id="am-pm">AM</span>
+            </div>
+        </div>
+        <div class="container-calendar" onload="whichDay(), whichDayNumber()">
+            <div class="calendar centralize">
+                <h2>
+                    <span id="dayOfWeek">Day</span>
+                        <span id="month"></span>
+                        <span id="dayNumber"></span>
+                </h2>
+            </div>
+        </div>
+    </main>
+    <footer class="container-footer">
+        <div>
+            <p>Desenvolvido por <a href="#">pecames</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
