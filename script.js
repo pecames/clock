@@ -26,9 +26,9 @@ function whatsOclock(){
         hours -= 12
     }
 
-    document.getElementById('hours').innerHTML = hours
-    document.getElementById('minutes').innerHTML = minutes
-    document.getElementById('seconds').innerHTML = seconds
+    document.getElementById('hours').innerHTML = hours.toString().padStart(2, '0')
+    document.getElementById('minutes').innerHTML = minutes.toString().padStart(2, '0')
+    document.getElementById('seconds').innerHTML = seconds.toString().padStart(2, '0')
 }
 
 setInterval(whatsOclock, 1000)

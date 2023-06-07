@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 :root{
-    --top-color-day: yellow;
+    --top-color-day: rgb(228, 113, 31);
     --bottom-color-day: orange;
     --top-color-night: blue;
     --bottom-color-night: brown;
